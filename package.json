@@ -25,7 +25,7 @@
     "test:watch": "react-scripts test",
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
-    "lint": "eslint --ignore-path .gitignore .",
+    "lint": "eslint --ignore-path .gitignore . --max-warnings=0",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
     "coverage": "npm run test -- --coverage --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories}.{ts,tsx,test}'",
     "pre-commit": "npm-run-all -s lint format test",
